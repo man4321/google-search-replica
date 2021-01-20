@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  font-size: large;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -9,12 +10,24 @@
 input {
   width: 800px;
   height: 30px;
-  /* border-style: none; */
-  /* border-radius: 50%; */
+  padding: 8px;
+  font-size: large;
+  outline: none;
+  border-radius: 100px;
   box-shadow: 4px 4px #888888;
 }
-.sel :hover {
+.sel {
   width: 800px;
+  list-style-type: none;
+  
+  padding: 8px;
+  
+  text-align: start;
+  
   cursor: pointer;
-  box-shadow: 4px 4px #888888;
+  border-radius: 50px;
+  
+}
+.main :hover{
+  background-color: rgb(233, 227, 229);
 }

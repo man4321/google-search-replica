@@ -1,14 +1,14 @@
 import * as Actions from "../actions";
 
 const initialState = {
-  suggeation: [],
+  suggestion: [],
 };
 
 const SearchReducer = (store = initialState, action) => {
   switch (action.type) {
     case Actions.SEARCH_API_CALL:
       return {
-        suggeation: action.payload[1],
+        suggestion: action.payload[1],
       };
     default :
     return store;

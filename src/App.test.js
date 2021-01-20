@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import GoogleSearch from './googleSearch/googleSearch'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+test("renders something",()=>{
+  render(<GoogleSearch/>);
+  const linkElement = screen.getByText(/search.../i);
   expect(linkElement).toBeInTheDocument();
-});
+})
