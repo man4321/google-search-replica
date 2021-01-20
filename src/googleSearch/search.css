@@ -31,3 +31,14 @@ input {
 .main :hover{
   background-color: rgb(233, 227, 229);
 }
+
+@media screen and (max-width:480px){
+  .main{ width: 450px;}
+  input { width: 400px;}
+  .sel { width:400px;}
+}
+@media screen and (max-width:800px) and (min-width:481px){
+  .main{ width: 550px;}
+  input { width: 500px;}
+  .sel { width:500px;}
+}

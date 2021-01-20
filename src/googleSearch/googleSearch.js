@@ -33,15 +33,16 @@ const GoogleSearch = (props) => {
       )}
       {search.data.length !== 0 &&
         suggestion.map((data, index) => (
-          <li
+          <li 
+            key={index}
             className="sel"
             onClick={() => {
               handleClick(index);
             }}
           >
-            {data.split(" ").map((d) => {
-              if (search.data.includes(d)) return <strong>{d + " "}</strong>;
-              else return <span>{d + " "}</span>;
+            {data.split(" ").map((d,i) => {
+              if (search.data.includes(d)) return <strong key={i}>{d + " "}</strong>;
+              else return <span key={i}>{d + " "}</span>;
             })}
           </li>
         ))}
